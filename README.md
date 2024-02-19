@@ -19,3 +19,22 @@
 1. Dependency on Outer Query: The subquery refers to columns from the outer query, making it dependent on the context of the outer query.
 2. Executes Once for Each Row: The subquery is executed once for each row processed by the outer query. This can potentially impact performance, especially if the subquery involves complex operations or accesses large datasets.
 3. Used with EXISTS, IN, etc.: Correlated subqueries are often used with keywords like EXISTS, IN, or ANY to filter or compare results.
+
+## CASE
+
+1. The CASE statement is a conditional expression that allows you to perform conditional logic within a query.
+2. It can be used in various ways to conditionally return values based on specified conditions.
+3. The basic syntax of the CASE statement is as follows:
+ CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ...
+    WHEN conditionN THEN resultN
+    ELSE elseResult
+END
+
+4. WHEN condition THEN result: Specifies a condition and the corresponding result if the condition is true.
+5. ELSE elseResult: Specifies a default result if none of the conditions are true. This part is optional.
+6. It can be used in various parts of a SQL query, such as in the SELECT list, in the WHERE clause, or in the ORDER BY clause.
+7. The ELSE clause is optional but can be used to provide a default result if none of the conditions are met.
+8. You can also use CASE with aggregate functions, making it useful in summarizing data based on certain conditions.
