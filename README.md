@@ -1,4 +1,4 @@
-<img src="./SQLcorrelated.jpg"  style='margin: auto;'>
+<img src="./SQLcorrelated.jpg" style="margin: auto; width: 100%;">
 
 
 # CorrelatedSubquerry
@@ -25,7 +25,7 @@
 1. The CASE statement is a conditional expression that allows you to perform conditional logic within a query.
 2. It can be used in various ways to conditionally return values based on specified conditions.
 3. The basic syntax of the CASE statement is as follows:
- CASE
+CASE
     WHEN condition1 THEN result1
     WHEN condition2 THEN result2
     ...
@@ -38,3 +38,7 @@ END
 6. It can be used in various parts of a SQL query, such as in the SELECT list, in the WHERE clause, or in the ORDER BY clause.
 7. The ELSE clause is optional but can be used to provide a default result if none of the conditions are met.
 8. You can also use CASE with aggregate functions, making it useful in summarizing data based on certain conditions.
+
+## Decode
+1. In SQL, the DECODE function is specific to Oracle Database and is used for conditional value assignment
+2. It provides a way to perform conditional logic within a query, similar to the CASE statement used in other database systems.
